@@ -18,7 +18,7 @@
           <module>gilded-rose</module>
           <module>game-of-life</module>
 	</modules>
-	</dependencies>
+	
 <build>
     <plugins>
         <plugin>
