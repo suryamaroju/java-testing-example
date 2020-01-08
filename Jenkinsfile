@@ -13,7 +13,7 @@ pipeline {
             }
             post {
                 success {
-                    junit 'target/surefire-reports/**/*.xml' 
+                   echo 'Build completed succesfully'
                 }
             }
         }
