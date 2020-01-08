@@ -6,9 +6,9 @@ pipeline {
         echo 'Hello World'
       }
     }
-    stage('git clone') {
+    stage('2nd stage') {
       steps {
-        git clone "https://github.com/suryamaroju/java-testing-example.git"
+        echo 'hello 2nd time'
       }
     }
   }
