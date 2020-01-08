@@ -4,15 +4,17 @@ tools {
         maven 'Maven 3.3.9'
         jdk 'jdk8'
     }
-stages{
-stage("Build")
-{
-step{
- sh 'mvn clean install test'
-}
-
-}
-}
+        stages{
+stage('Build') {
+           steps {
+            
+                 
+                sh 'mvn clean install test'
+              
+        } 
+       
+   }
+        }
 post {
         always {
             echo 'I have finished and deleting workspace'
