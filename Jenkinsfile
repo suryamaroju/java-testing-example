@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'ubuntut'
+      image 'ubuntu'
     }
   }
  tools {
