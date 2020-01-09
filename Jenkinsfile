@@ -1,8 +1,6 @@
 pipeline {
   agent {
-    docker {
-      image 'ubuntu'
-    }
+    docker 'ubuntu'
   }
  tools {
         maven 'MyMaven'
@@ -13,7 +11,7 @@ pipeline {
 
         stage ('Build') {
             steps {
-                bat 'mvn -Dmaven.test.failure.ignore=true install' 
+                sh 'mvn -Dmaven.test.failure.ignore=true install' 
             }
             post {
                 success {
